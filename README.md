@@ -35,7 +35,7 @@ DCMixRec is a novel deep learning framework designed for accelerated multi-contr
 <p align="center">
   <img src="./picture/simon_t2_12.png" alt="SIMON T2" width="100%">
   <br>
-  SIMON Brain T$$_{2}$$ modality Reconstruction
+  SIMON Brain T₂ modality Reconstruction
 </p>
 
 - Superior reconstruction quality​ on SIMON and fastMRI datasets
