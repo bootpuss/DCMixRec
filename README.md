@@ -2,8 +2,33 @@
 Detail-Contour Feature-Disentangled Mixed Heterogeneous Model for Multi-Contrast MRI Reconstruction.
 
 ## Introduction
-Magnetic Resonance Imaging (MRI) plays a critical role in clinical diagnosis by revealing structural and pathological details through tissue contrast. However, multi-contrast MRI protocols often suffer from long acquisition times, which limit their practical utility. While deep learning has shown great promise in accelerating MRI reconstruction, existing approaches are typically constrained to a single architectural paradigm—such as CNNs for local feature extraction, or Transformers and Mamba for capturing long-range dependencies. A unified framework that effectively integrates these complementary models remains largely unexplored.
+DCMixRec is a novel deep learning framework designed for accelerated multi-contrast MRI reconstruction, addressing the critical challenge of long acquisition times in clinical MRI protocols. This project introduces a groundbreaking approach that synergistically integrates state-space models, self-attention mechanisms, and convolutional neural networks to achieve computationally efficient and context-aware MRI reconstruction.
 
-To bridge this gap, we propose DCMixRec, a novel Detail-Contour Feature-Disentangled Mixed Heterogeneous Model for accelerated multi-contrast MRI Reconstruction. Our framework pioneers the synergistic integration of state-space, self-attention, and convolutional models to achieve computationally efficient and context-aware reconstruction.
+## Key Innovations
+🎯 Mixed Heterogeneous Architecture
+**First-of-its-kind** fusion of state-space, self-attention, and convolutional models in MRI Reconstruction
 
-Extensive evaluations on the SIMON​ and fastMRI​ datasets demonstrate that DCMixRec achieves superior reconstruction quality—both quantitatively and visually—outperforming existing mono-contrast and multi-contrast methods. It excels in preserving anatomical details and structural consistency, especially under low-sampling scenarios, and shows strong generalizability across various anatomical regions and sampling protocols.
+🔍 Detail-Contour Feature Disentanglement Encoder
+**Divide-and-conquer strategy**: Resolves the inherent trade-off between texture preservation and structural fidelity
+
+🏗️ Dense State-Space Reconstruct Decoder
+**Multi-scale feature aggregation**: Balances global long-range dependencies with fine-grained local information
+
+
+## Performance Highlights
+
+Superior reconstruction quality​ on SIMON and fastMRI datasets
+
+Achieves better performance than mono-contrast and two-contrast methods by leveraging complementary information more effectively
+
+Exceptional performance​ in challenging low-sampling scenarios
+
+Proven generalizability​ across different anatomical regions and sampling protocols
+
+## Clinical Impact
+
+Reducing MRI acquisition times while maintaining diagnostic quality
+
+Preserving both fine anatomical details and structural integrity
+
+Supporting multi-contrast protocols for comprehensive diagnostic imaging
