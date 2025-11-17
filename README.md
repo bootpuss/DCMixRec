@@ -20,7 +20,23 @@ DCMixRec is a novel deep learning framework designed for accelerated multi-contr
 
 ## 🏆 Performance Highlights
 
-<img src="./picture/fastmri_pd_12.png" alt="fastMRI PD" width="90%">
+<p align="center">
+  <img src="./picture/fastmri_pd_12.png" alt="FastMRI PD" width="90%">
+  <br>
+  <em>FastMRI Knee PD modality Reconstruction</em>
+</p>
+
+<p align="center">
+  <img src="./picture/simon_pd_12.png" alt="SIMON PD" width="90%">
+  <br>
+  <em>SIMON Brain PD modality Reconstruction</em>
+</p>
+
+<p align="center">
+  <img src="./picture/simon_t2_12.png" alt="SIMON T2" width="90%">
+  <br>
+  <em>SIMON Brain T$_2$ modality Reconstruction</em>
+</p>
 
 - Superior reconstruction quality​ on SIMON and fastMRI datasets
 
