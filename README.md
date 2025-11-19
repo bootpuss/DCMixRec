@@ -53,5 +53,3 @@ DCMixRec is a novel deep learning framework designed for accelerated multi-contr
 ## 🚀 Get Started
 
 Code will be released soon.
-
-- Supporting multi-contrast protocols for comprehensive diagnostic imaging
