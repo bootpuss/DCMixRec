@@ -48,7 +48,9 @@ DCMixRec is a novel deep learning framework designed for accelerated multi-contr
 
 ## 💡 Clinical Impact
 
-- Reducing MRI acquisition times while maintaining diagnostic quality
+- Improves subtle detail visibility for earlier and more reliable pathology detection
+
+- Provides artifact-reduced, high-fidelity reconstructions for greater diagnostic confidence
 
 ## 🚀 Get Started
 
