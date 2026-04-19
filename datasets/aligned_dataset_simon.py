@@ -36,8 +36,9 @@ class AlignedDatasetSIMON(BaseDataset):
         print(f"---------------------------{opt.phase} images: {len(self.all_data)} ---------------------------")
 
     def _preload_all_data(self):
-        source_str = '/home/sxb/Home_Folder_File/SMI_PRO_ST'
-        fix_str = '/media/potato/cyf/cyf'
+        # TODO: Replace the paths below with your local dataset directories
+        source_str = ''
+        fix_str = ''
         
         file_groups = {}
         for idx in range(len(self.df)):
