@@ -1,57 +1,7 @@
 # DCMixRec
-Detail-Contour Feature-Disentangled Mixed Heterogeneous Model for Multi-Contrast MRI Reconstruction.
-
-## 📖 Introduction
-DCMixRec is a novel deep learning framework designed for accelerated multi-contrast MRI reconstruction, addressing the critical challenge of long acquisition times in clinical MRI protocols. This project introduces a groundbreaking approach that synergistically integrates state-space models, self-attention mechanisms, and convolutional neural networks to achieve computationally efficient and context-aware MRI reconstruction.
-
-## ✨ Key Innovations
-- Mixed Heterogeneous Architecture
-
-  **First-of-its-kind** fusion of state-space, self-attention, and convolutional models in MRI Reconstruction
-
-- Detail-Contour Feature Disentanglement Encoder
-
-  **Divide-and-conquer strategy**: Resolves the inherent trade-off between texture preservation and structural fidelity
-
-- Dense State-Space Reconstruct Decoder
-
-  **Multi-scale feature aggregation**: Balances global long-range dependencies with fine-grained local information
+Detail-Contour Feature-Disentangled Mixed Heterogeneous Network for Multi-Contrast MR Imaging Reconstruction
 
 
-## 🏆 Performance Highlights
+## Abstract
+Multi-contrast MRI provides superior tissue contrast for diagnosis, yet its clinical utility is hampered by long acquisition times. Deep learning enables accelerated reconstruction, but existing methods suffer from two limitations: \textit{(i) architectural homogeneity}: they adopt either CNNs for local features or Transformers/Mamba-based models for long-range dependencies, without leveraging the complementary benefits of heterogeneous architectures; \textit{(ii) frequency-blinded cross-modality fusion}: existing methods indiscriminately mix high-frequency details with low-frequency global anatomical structures, causing interference that hinders clear edge and texture recovery, thereby limiting reconstruction quality. To address both challenges, we propose DCMixRec, a \underline{D}etail-\underline{C}ontour Feature-Disentangled \underline{Mix}ed Heterogeneous Model for accelerated multi-contrast MR Imaging \underline{Rec}onstruction. Specifically, the Detail-Contour Feature-Disentanglement (DCFD) encoder factorizes features into complementary contour and detail subspaces to be processed in parallel, subsequently integrating them into a unified representation. The State-Gated Dense Reconstruction (SGDR) decoder then processes the unified features via a dynamically constrained architecture, leveraging topological states to gate the spatial decoding process. Extensive experiments on the fastMRI knee and SIMON brain datasets demonstrate that DCMixRec consistently outperforms state-of-the-art methods in reconstruction quality and anatomical fidelity. Furthermore, t-SNE and feature activation maps explicitly validate the detail-contour feature disentanglement in latent space, confirming the interpretability of our proposed disentanglement mechanism.
 
-<p align="center">
-  <img src="./picture/fastmri_pd_12.png" alt="fastMRI PD" width="100%">
-  <br>
-  fastMRI Knee PD modality Reconstruction
-</p>
-
-<p align="center">
-  <img src="./picture/simon_pd_12.png" alt="SIMON PD" width="100%">
-  <br>
-  SIMON Brain PD modality Reconstruction
-</p>
-
-<p align="center">
-  <img src="./picture/simon_t2_12.png" alt="SIMON T2" width="100%">
-  <br>
-  SIMON Brain T₂ modality Reconstruction
-</p>
-
-- Superior reconstruction quality​ on SIMON and fastMRI datasets
-
-- Achieves better performance than mono-contrast methods by leveraging complementary information more effectively
-
-- Exceptional performance​ in challenging low-sampling scenarios
-
-- Proven generalizability​ across different anatomical regions and sampling protocols
-
-## 💡 Clinical Impact
-
-- Improves subtle detail visibility for earlier and more reliable pathology detection
-
-- Provides artifact-reduced, high-fidelity reconstructions for greater diagnostic confidence
-
-## 🚀 Get Started
-
-Code will be released soon.
